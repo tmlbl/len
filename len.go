@@ -37,7 +37,7 @@ func exitIfErr(err error) {
 func main() {
 	flag.StringVar(&glob, "g", "*.go,**/*.go",
 		"File globs to test, comma-separated")
-	flag.IntVar(&maxlen, "len", 80, "Maximum line length to allow")
+	flag.IntVar(&maxlen, "l", 80, "Maximum line length to allow")
 	flag.Parse()
 
 	var files []string
